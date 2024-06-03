@@ -1,0 +1,21 @@
+		<div class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="/app/saicms/resource/img/logo.png" alt="logo"/></a>
+				</div>
+				<div class="navbar-collapse collapse ">
+					<ul class="nav navbar-nav">
+						<li><a href="/app/saicms">主页</a></li>
+<?php foreach($category as $item){ ?>
+						<li><a href="/app/saicms/index/list?cid=<?=$item['id']?>"><?=$item['category_name']?></a></li>
+<?php } ?>
+						<li><a href="/app/saicms/index/price">定价</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>

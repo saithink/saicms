@@ -1,0 +1,20 @@
+{
+    "name": "saithink/saicms",
+    "description": "基于saiadmin开发的应用",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Webman\\saicms\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "saithink",
+            "email": "1430792918@qq.com"
+        }
+    ],
+    "require": {
+		"saithink/saiadmin": "^1.0",
+	}
+}

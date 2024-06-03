@@ -1,0 +1,71 @@
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="widget">
+						<h5 class="widgetheading">联系我们</h5>
+						<address>
+							<strong>SaiAdmin</strong><br>
+							北京市海淀区上地十街10号
+						</address>
+						<p>
+							<i class="icon-phone"></i> (+86) 158-8888-8888 <br>
+							<i class="icon-envelope-alt"></i> 1430792918@qq.com
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="widget">
+						<h5 class="widgetheading">快速链接</h5>
+						<ul class="link-list">
+							<li><a href="#">saiadmin</a></li>
+							<li><a href="#">webman</a></li>
+							<li><a href="#">vuejs</a></li>
+							<li><a href="#">arco.design</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="widget">
+						<h5 class="widgetheading">最近更新</h5>
+						<ul class="link-list">
+							<li><a href="#">更新版本1.0.12 于 2024-05-22</a></li>
+							<li><a href="#">更新版本v1.5.5 于 2023-12-05</a></li>
+							<li><a href="#">更新版本3.4.25 于 2024-04-25</a></li>
+							<li><a href="#">更新版本2.55.0 于 2024-03-15</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="widget">
+						<h5 class="widgetheading">最近新闻</h5>
+						<ul class="link-list">
+<?php foreach($lastArticle as $item){ ?>
+							<li><a href="/app/saicms/index/article?id=<?=$item['id']?>" target="_blank"><?=$item['title']?></a></li>
+<?php } ?>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="sub-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="copyright">
+							<p>
+								<span>&copy; 2024 Copyright. Template By </span><a href="http://webthemez.com" target="_blank">WebThemez</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<ul class="social-network">
+							<li><a href="#" data-placement="top" title="Weibo"><i class="fa fa-weibo"></i></a></li>
+							<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+							<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>

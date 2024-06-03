@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SaiCms演示站-<?=$model['title']?></title>
+<?php include base_path().'/plugin/saicms/app/view/style.html'; ?>
+</head>
+<body>
+<div id="wrapper">
+	<!-- start header -->
+	<header>
+<?php include base_path().'/plugin/saicms/app/view/header.html'; ?>
+	</header>
+	<!-- end header -->
+	<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="pageTitle">文章详情</h2>
+			</div>
+		</div>
+	</div>
+	</section>
+	<section id="content">
+		<div class="container">
+			<div class="about">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="pricing-title">
+							<h2><?=$model['title']?></h2>
+							<div class="con">
+								<p class="p1">来源：<?=$model['author']?></p>
+								<p class="p2">浏览：<?=$model['views']?>人</p>
+								<p class="p3">时间：<?=$model['create_time']?></p>
+							</div>
+						</div>
+						<div class="about-logo">
+							<?=$model['content']?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+<?php include base_path().'/plugin/saicms/app/view/footer.html'; ?>
+	</footer>
+</div>
+<?php include base_path().'/plugin/saicms/app/view/script.html'; ?>
+</body>
+</html>
