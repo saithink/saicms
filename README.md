@@ -43,7 +43,7 @@ composer require saithink/saicms
   <tbody>
     <tr>
       <td align="center" valign="middle">
-        <img src="https://saithink.top/img/me.png" class="no-zoom" style="width:180px;margin: 10px;">
+        <img src="https://saithink.top/img/me.png" width="180px">
         <p>saiadmin交流群(添加我微信备注"saiadmin")</p>
       </td>
     </tr>
