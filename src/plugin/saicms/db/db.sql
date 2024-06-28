@@ -105,43 +105,43 @@ INSERT INTO `eb_article_category` VALUES (9, 3, '手机', NULL, NULL, 100, 1, 1,
 -- ----------------------------
 -- Records of eb_system_menu
 -- ----------------------------
-INSERT INTO `eb_system_menu` VALUES (NULL, 0, '0', 'SAICMS', 'saicms', 'IconBook', 'saicms', NULL, NULL, 2, 'M', 1, 1, NULL, 1, 1, '2024-06-02 22:36:56', '2024-06-02 22:36:56', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, 0, '0', 'SAICMS', 'saicms', 'IconBook', 'saicms', NULL, NULL, 2, 'M', 0, NULL, 1, 1, NULL, 1, 1, '2024-06-02 22:36:56', '2024-06-02 22:36:56', NULL);
 SET @id := LAST_INSERT_ID();
 SET @level := CONCAT('0', ',', @id);
-INSERT INTO `eb_system_menu` VALUES (NULL, @id, @level, '文章管理', 'saicms/news/article', 'icon-home', 'saicms/news/article', 'saicms/news/article/index', NULL, 2, 'M', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @id, @level, '文章管理', 'saicms/news/article', 'icon-home', 'saicms/news/article', 'saicms/news/article/index', NULL, 2, 'M', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
 SET @idone := LAST_INSERT_ID();
 SET @levelone := CONCAT(@id, ',', @idone);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理列表', '/saicms/news/article/index', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理保存', '/saicms/news/article/save', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理更新', '/saicms/news/article/update', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理读取', '/saicms/news/article/read', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理删除', '/saicms/news/article/destroy', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理回收', '/saicms/news/article/recycle', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理恢复', '/saicms/news/article/recovery', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理销毁', '/saicms/news/article/realDestroy', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理列表', '/saicms/news/article/index', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理保存', '/saicms/news/article/save', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理更新', '/saicms/news/article/update', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理读取', '/saicms/news/article/read', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理删除', '/saicms/news/article/destroy', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理回收', '/saicms/news/article/recycle', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理恢复', '/saicms/news/article/recovery', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idone, @levelone, '文章管理销毁', '/saicms/news/article/realDestroy', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
 
-INSERT INTO `eb_system_menu` VALUES (NULL, @id, @level, '文章分类', 'saicms/news/category', 'icon-home', 'saicms/news/category', 'saicms/news/category/index', NULL, 2, 'M', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @id, @level, '文章分类', 'saicms/news/category', 'icon-home', 'saicms/news/category', 'saicms/news/category/index', NULL, 2, 'M', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
 SET @idtwo := LAST_INSERT_ID();
 SET @leveltwo := CONCAT(@id, ',', @idtwo);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类列表', '/saicms/news/category/index', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类保存', '/saicms/news/category/save', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类更新', '/saicms/news/category/update', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类读取', '/saicms/news/category/read', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类删除', '/saicms/news/category/destroy', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类回收', '/saicms/news/category/recycle', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类恢复', '/saicms/news/category/recovery', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类销毁', '/saicms/news/category/realDestroy', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类列表', '/saicms/news/category/index', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类保存', '/saicms/news/category/save', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类更新', '/saicms/news/category/update', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类读取', '/saicms/news/category/read', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类删除', '/saicms/news/category/destroy', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类回收', '/saicms/news/category/recycle', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类恢复', '/saicms/news/category/recovery', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idtwo, @leveltwo, '文章分类销毁', '/saicms/news/category/realDestroy', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
 
-INSERT INTO `eb_system_menu` VALUES (NULL, @id, @level, '文章轮播', 'saicms/news/banner', 'icon-home', 'saicms/news/banner', 'saicms/news/banner/index', NULL, 2, 'M', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @id, @level, '文章轮播', 'saicms/news/banner', 'icon-home', 'saicms/news/banner', 'saicms/news/banner/index', NULL, 2, 'M', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
 SET @idthree := LAST_INSERT_ID();
 SET @levelthree := CONCAT(@id, ',', @idthree);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播列表', '/saicms/news/banner/index', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播保存', '/saicms/news/banner/save', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播更新', '/saicms/news/banner/update', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播读取', '/saicms/news/banner/read', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播删除', '/saicms/news/banner/destroy', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播回收', '/saicms/news/banner/recycle', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播恢复', '/saicms/news/banner/recovery', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
-INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播销毁', '/saicms/news/banner/realDestroy', NULL, NULL, NULL, NULL, 2, 'B', 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播列表', '/saicms/news/banner/index', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播保存', '/saicms/news/banner/save', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播更新', '/saicms/news/banner/update', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播读取', '/saicms/news/banner/read', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播删除', '/saicms/news/banner/destroy', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播回收', '/saicms/news/banner/recycle', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播恢复', '/saicms/news/banner/recovery', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
+INSERT INTO `eb_system_menu` VALUES (NULL, @idthree, @levelthree, '文章轮播销毁', '/saicms/news/banner/realDestroy', NULL, NULL, NULL, NULL, 2, 'B', 0, NULL, 1, 0, NULL, NULL, NULL, '2024-06-02 22:45:02', '2024-06-02 22:45:02', NULL);
 
 SET FOREIGN_KEY_CHECKS = 1;
