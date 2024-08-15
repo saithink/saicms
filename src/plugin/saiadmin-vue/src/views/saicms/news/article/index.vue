@@ -41,14 +41,14 @@ const options = reactive({
   rowSelection: { showCheckedAll: true },
   add: {
     show: true,
-    auth: ['/saicms/news/Article/save'],
+    auth: ['/saicms/news/article/save'],
     func: async () => {
       editRef.value?.open()
     },
   },
   edit: {
     show: true,
-    auth: ['/saicms/news/Article/update'],
+    auth: ['/saicms/news/article/update'],
     func: async (record) => {
       editRef.value?.open('edit')
       editRef.value?.setFormData(record)
@@ -56,7 +56,7 @@ const options = reactive({
   },
   delete: {
     show: true,
-    auth: ['/saicms/news/Article/destroy'],
+    auth: ['/saicms/news/article/destroy'],
     func: async (params) => {
       const resp = await api.delete(params)
       if (resp.code === 200) {
@@ -64,7 +64,7 @@ const options = reactive({
         crudRef.value?.refresh()
       }
     },
-    realAuth: ['/saicms/news/Article/realDestroy'],
+    realAuth: ['/saicms/news/article/realDestroy'],
     realFunc: async (params) => {
       const resp = await api.realDestroy(params)
       if (resp.code === 200) {
@@ -75,7 +75,7 @@ const options = reactive({
   },
   recovery: {
     show: true,
-    auth: ['/saicms/news/Article/recovery'],
+    auth: ['/saicms/news/article/recovery'],
     func: async (params) => {
       const resp = await api.recovery(params)
       if (resp.code === 200) {

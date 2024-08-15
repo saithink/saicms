@@ -13,6 +13,7 @@ composer require saithink/saicms
 
 安装之前确保已经安装了saiadmin
 
+安装数据库: saicms/db/db.sql
 
 安装后页面访问路径: http://localhost:8787/app/saicms
 
@@ -22,9 +23,6 @@ composer require saithink/saicms
   <li>
     <a href="https://saithink.top" target="_blank">SaiAdmin</a>
   </li>
-  <li>
-    <a href="https://saithink.top/pages/91e7a7/" target="_blank">SaiCms</a>
-  </li>
 </ul>
 
 <br>
@@ -33,9 +31,6 @@ composer require saithink/saicms
 <p>演示地址： <a href="http://admin.saithink.top">http://admin.saithink.top</a></p>
 <p>演示账号：admin</p>
 <p>演示密码：123456</p>
-
-<h1>前端访问地址</h1>
-<p>演示地址： <a href="http://cms.saithink.top">http://cms.saithink.top</a></p>
 
 <h1>共同交流</h1>
 

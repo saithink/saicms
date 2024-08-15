@@ -42,14 +42,14 @@ const options = reactive({
   isExpand: true,
   add: {
     show: true,
-    auth: ['/saicms/news/ArticleCategory/save'],
+    auth: ['/saicms/news/category/save'],
     func: async () => {
       editRef.value?.open()
     },
   },
   edit: {
     show: true,
-    auth: ['/saicms/news/ArticleCategory/update'],
+    auth: ['/saicms/news/category/update'],
     func: async (record) => {
       editRef.value?.open('edit')
       editRef.value?.setFormData(record)
@@ -57,7 +57,7 @@ const options = reactive({
   },
   delete: {
     show: true,
-    auth: ['/saicms/news/ArticleCategory/destroy'],
+    auth: ['/saicms/news/category/destroy'],
     func: async (params) => {
       const resp = await api.delete(params)
       if (resp.code === 200) {
@@ -65,7 +65,7 @@ const options = reactive({
         crudRef.value?.refresh()
       }
     },
-    realAuth: ['/saicms/news/ArticleCategory/realDestroy'],
+    realAuth: ['/saicms/news/category/realDestroy'],
     realFunc: async (params) => {
       const resp = await api.realDestroy(params)
       if (resp.code === 200) {
@@ -76,7 +76,7 @@ const options = reactive({
   },
   recovery: {
     show: true,
-    auth: ['/saicms/news/ArticleCategory/recovery'],
+    auth: ['/saicms/news/category/recovery'],
     func: async (params) => {
       const resp = await api.recovery(params)
       if (resp.code === 200) {
